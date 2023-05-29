@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2023-05-22 22:30+0000\n"
+"POT-Creation-Date: 2023-05-26 23:08+0000\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Language: ar\n"
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-05-23 20:46\n"
+"PO-Revision-Date: 2023-05-27 00:15\n"
 "Last-Translator: \n"
 "Language-Team: Arabic\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
@@ -51,6 +51,18 @@ msgstr "+ منصب جديد"
 #: src/pages/Swap/index.tsx
 msgid "- Remove recipient"
 msgstr "- إزالة المستلم"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 month"
+msgstr "شهر واحد"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 week"
+msgstr "أسبوع 1"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 year"
+msgstr "سنة واحدة"
 
 #: src/components/Tokens/TokenDetails/StatsSection.tsx
 msgid "24H volume"
@@ -239,9 +251,17 @@ msgstr "العنوان ليس لديه مطالبة متاحة"
 msgid "Against"
 msgstr "ضد"
 
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "All time"
+msgstr "كل الوقت"
+
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allow LP token migration"
 msgstr "السماح بترحيل رمز LP"
+
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Allow {0} to be used for swapping"
+msgstr "السماح باستخدام {0} للمبادلة"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -277,7 +297,6 @@ msgid "Approval failed"
 msgstr "فشلت الموافقة"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approval pending"
 msgstr "في انتظار الموافقة"
 
@@ -296,13 +315,8 @@ msgid "Approve in wallet"
 msgstr "الموافقة في المحفظة"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approve in your wallet"
 msgstr "الموافقة في محفظتك"
-
-#: src/pages/Swap/index.tsx
-msgid "Approve use of {0}"
-msgstr "الموافقة على استخدام {0}"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 #: src/pages/AddLiquidity/index.tsx
@@ -625,6 +639,14 @@ msgstr "تأكيد"
 msgid "Confirm Supply"
 msgstr "تأكيد الإمداد"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Confirm Swap"
+msgstr "تأكيد المبادلة"
+
+#: src/components/swap/SwapModalFooter.tsx
+msgid "Confirm swap"
+msgstr "تأكيد المبادلة"
+
 #: src/components/ModalViews/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/claim/AddressClaimModal.tsx
@@ -843,7 +865,6 @@ msgstr "مفصل"
 msgid "Details"
 msgstr "التفاصيل"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/nft/components/profile/list/PriceTextInput.tsx
 msgid "Dismiss"
 msgstr "تجاهل"
@@ -892,6 +913,10 @@ msgstr "يحرر"
 msgid "Edit listings"
 msgstr "تحرير القوائم"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Enable spending limits for {0} on Uniswap"
+msgstr "تفعيل حدود الإنفاق لـ {0} على Uniswap"
+
 #: src/state/burn/v3/hooks.tsx
 msgid "Enter a percent"
 msgstr "أدخل نسبة مئوية"
@@ -916,7 +941,6 @@ msgstr "أدخل مبلغ"
 msgid "Enter {0} amount"
 msgstr "أدخل مبلغ {0}"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/Web3Status/index.tsx
 msgid "Error"
@@ -1576,6 +1600,10 @@ msgstr "غير متوفر في منطقتك"
 msgid "Not created"
 msgstr "لم يتم إنشاؤه"
 
+#: src/components/CurrencyInputPanel/FiatValue.tsx
+msgid "Not enough liquidity to show accurate USD value."
+msgstr "لا توجد سيولة كافية لإظهار قيمة دقيقة للدولار الأمريكي."
+
 #: src/nft/components/collection/CollectionAsset.tsx
 msgid "Not listed"
 msgstr "غير مدرج"
@@ -1651,13 +1679,21 @@ msgstr "ادفع عن طريق"
 msgid "Pending"
 msgstr "قيد الانتظار"
 
-#: src/pages/Swap/index.tsx
-msgid "Permission is required for Uniswap to swap each token. This will expire after one month for your security."
-msgstr "مطلوب إذن لـ Uniswap لمبادلة كل رمز مميز. ستنتهي صلاحيته بعد شهر واحد من أجل أمانك."
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Pending..."
+msgstr "قيد الانتظار..."
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit approval failed"
+msgstr "فشلت الموافقة على التصريح"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Permit2"
 msgstr "تصريح 2"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit2 allows token approvals to be shared and managed across different applications."
+msgstr "يسمح Permit2 بمشاركة موافقات الرمز المميز وإدارتها عبر تطبيقات مختلفة."
 
 #: src/components/vote/ProposalEmptyState.tsx
 msgid "Please connect to Layer 1 Ethereum"
@@ -1771,6 +1807,12 @@ msgstr "سياسة الخصوصية."
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Proceed in wallet"
 msgstr "المضي قدما في المحفظة"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Proceed in your wallet"
+msgstr "تابع في محفظتك"
 
 #: src/nft/components/profile/list/Modal/SuccessScreen.tsx
 msgid "Proceeds if sold"
@@ -1981,6 +2023,7 @@ msgstr "السداد"
 msgid "Resolve {issues} issues"
 msgstr "حل {issues} مشاكل"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Retry"
 msgstr "أعد المحاولة"
@@ -2000,7 +2043,7 @@ msgid "Reverse Registrar"
 msgstr "المسجل العكسي"
 
 #: src/components/swap/ConfirmSwapModal.tsx
-msgid "Review Swap"
+msgid "Review swap"
 msgstr "مراجعة المبادلة"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
@@ -2221,6 +2264,7 @@ msgid "Succeeded"
 msgstr "نجح"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Success"
 msgstr "النجاح"
 
@@ -2239,7 +2283,6 @@ msgstr "إمداد {0} {1} و {2} {3}"
 #: src/components/NavBar/index.tsx
 #: src/components/Tokens/TokenDetails/MobileBalanceSummaryFooter.tsx
 #: src/components/swap/SwapHeader.tsx
-#: src/components/swap/SwapModalFooter.tsx
 #: src/components/swap/SwapSkeleton.tsx
 #: src/pages/Swap/index.tsx
 #: src/pages/Swap/index.tsx
@@ -2259,6 +2302,7 @@ msgid "Swap exactly <0/> for <1/>"
 msgstr "استبدل <0/> بالضبط بـ <1/>"
 
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 msgid "Swap failed"
 msgstr "فشل المبادلة"
 
@@ -2270,10 +2314,6 @@ msgstr "مبادلة"
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
 msgid "Swapping"
 msgstr "مبادلة"
-
-#: src/components/swap/ConfirmSwapModal.tsx
-msgid "Swapping {0} {1} for {2} {3}"
-msgstr "مبادلة {0} {1} مقابل {2} {3}"
 
 #: src/nft/components/collection/Sweep.tsx
 msgid "Sweep"
@@ -2427,6 +2467,10 @@ msgstr "يجب تهيئة هذا المستودع قبل أن تتمكن من إ
 msgid "This proposal may be executed after {0}."
 msgstr "يمكن تنفيذ هذا الاقتراح بعد {0}."
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "This provides the Uniswap protocol access to your token for trading. For security, this will expire after 30 days."
+msgstr "يوفر هذا وصول بروتوكول Uniswap إلى الرمز المميز الخاص بك للتداول. للأمان ، ستنتهي صلاحيته بعد 30 يومًا."
+
 #: src/components/swap/SwapRoute.tsx
 msgid "This route optimizes your total output by considering split routes, multiple hops, and the gas cost of each step."
 msgstr "يعمل هذا المسار على تحسين إجمالي إنتاجك من خلال مراعاة المسارات المنقسمة والقفزات المتعددة وتكلفة الغاز لكل خطوة."
@@ -2493,6 +2537,10 @@ msgstr "لعرض الوظيفة ، يجب أن تكون متصلاً بالشب�
 #: src/components/AccountDrawer/MiniPortfolio/Activity/index.tsx
 msgid "Today"
 msgstr "اليوم"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Token approval failed"
+msgstr "فشلت الموافقة على الرمز المميز"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
 msgid "Token name"
@@ -2580,6 +2628,7 @@ msgid "Transaction rejected"
 msgstr "الصفقة مرفوضة"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Transaction submitted"
 msgstr "تم إرسال المعاملة"
 
@@ -2790,6 +2839,7 @@ msgid "View on Etherscan"
 msgstr "عرض على Etherscan"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "View on Explorer"
 msgstr "عرض على Explorer"
 
@@ -2901,9 +2951,22 @@ msgstr "تحذير"
 msgid "Welcome to team Unicorn :)"
 msgstr "مرحبًا بكم في فريق Unicorn :)"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are approvals required?"
+msgstr "لماذا الموافقات مطلوبة؟"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are permits required?"
+msgstr "لماذا التصاريح مطلوبة؟"
+
 #: src/nft/components/profile/list/Modal/ListModalSection.tsx
 msgid "Why is a transaction required?"
 msgstr "لماذا الصفقة مطلوبة؟"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Why is this required?"
+msgstr "لماذا هذا مطلوب؟"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Withdraw deposited liquidity"

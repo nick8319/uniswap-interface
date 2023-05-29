@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2023-05-22 22:30+0000\n"
+"POT-Creation-Date: 2023-05-26 23:08+0000\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Language: zh\n"
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-05-23 20:46\n"
+"PO-Revision-Date: 2023-05-27 00:15\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -51,6 +51,18 @@ msgstr "+ 新職位"
 #: src/pages/Swap/index.tsx
 msgid "- Remove recipient"
 msgstr "- 刪除接收人"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 month"
+msgstr "1個月"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 week"
+msgstr "1週"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 year"
+msgstr "1年"
 
 #: src/components/Tokens/TokenDetails/StatsSection.tsx
 msgid "24H volume"
@@ -239,9 +251,17 @@ msgstr "地址沒有可领取的代幣"
 msgid "Against"
 msgstr "反對"
 
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "All time"
+msgstr "整天"
+
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allow LP token migration"
 msgstr "允許流動池代幣遷移"
+
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Allow {0} to be used for swapping"
+msgstr "允許 {0} 用於交換"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -277,7 +297,6 @@ msgid "Approval failed"
 msgstr "審批失敗"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approval pending"
 msgstr "等待批准"
 
@@ -296,13 +315,8 @@ msgid "Approve in wallet"
 msgstr "在錢包中批准"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approve in your wallet"
 msgstr "在您的錢包中批准"
-
-#: src/pages/Swap/index.tsx
-msgid "Approve use of {0}"
-msgstr "批准使用 {0}"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 #: src/pages/AddLiquidity/index.tsx
@@ -625,6 +639,14 @@ msgstr "確認"
 msgid "Confirm Supply"
 msgstr "確認供應"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Confirm Swap"
+msgstr "確認兌換"
+
+#: src/components/swap/SwapModalFooter.tsx
+msgid "Confirm swap"
+msgstr "確認兌換"
+
 #: src/components/ModalViews/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/claim/AddressClaimModal.tsx
@@ -843,7 +865,6 @@ msgstr "詳細信息"
 msgid "Details"
 msgstr "詳細信息"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/nft/components/profile/list/PriceTextInput.tsx
 msgid "Dismiss"
 msgstr "關閉"
@@ -892,6 +913,10 @@ msgstr "修改"
 msgid "Edit listings"
 msgstr "編輯列表"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Enable spending limits for {0} on Uniswap"
+msgstr "在 Uniswap 上啟用 {0} 的支出限制"
+
 #: src/state/burn/v3/hooks.tsx
 msgid "Enter a percent"
 msgstr "輸入百分比"
@@ -916,7 +941,6 @@ msgstr "輸入數額"
 msgid "Enter {0} amount"
 msgstr "輸入 {0} 數額"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/Web3Status/index.tsx
 msgid "Error"
@@ -1576,6 +1600,10 @@ msgstr "在您所在的地區不可用"
 msgid "Not created"
 msgstr "未創建"
 
+#: src/components/CurrencyInputPanel/FiatValue.tsx
+msgid "Not enough liquidity to show accurate USD value."
+msgstr "沒有足夠的流動性來顯示準確的美元價值。"
+
 #: src/nft/components/collection/CollectionAsset.tsx
 msgid "Not listed"
 msgstr "不在名單中"
@@ -1651,13 +1679,21 @@ msgstr "使用。。。支付"
 msgid "Pending"
 msgstr "待辦"
 
-#: src/pages/Swap/index.tsx
-msgid "Permission is required for Uniswap to swap each token. This will expire after one month for your security."
-msgstr "Uniswap 交換每個代幣需要獲得許可。為了您的安全，這將在一個月後過期。"
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Pending..."
+msgstr "待辦的..."
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit approval failed"
+msgstr "許可證批准失敗"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Permit2"
 msgstr "許可證2"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit2 allows token approvals to be shared and managed across different applications."
+msgstr "Permit2 允許在不同的應用程序之間共享和管理令牌批准。"
 
 #: src/components/vote/ProposalEmptyState.tsx
 msgid "Please connect to Layer 1 Ethereum"
@@ -1771,6 +1807,12 @@ msgstr "隱私政策。"
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Proceed in wallet"
 msgstr "進入錢包"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Proceed in your wallet"
+msgstr "進入你的錢包"
 
 #: src/nft/components/profile/list/Modal/SuccessScreen.tsx
 msgid "Proceeds if sold"
@@ -1981,6 +2023,7 @@ msgstr "回報中"
 msgid "Resolve {issues} issues"
 msgstr "解決 {issues} 問題"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Retry"
 msgstr "重試"
@@ -2000,7 +2043,7 @@ msgid "Reverse Registrar"
 msgstr "反向註冊商"
 
 #: src/components/swap/ConfirmSwapModal.tsx
-msgid "Review Swap"
+msgid "Review swap"
 msgstr "審查交換"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
@@ -2221,6 +2264,7 @@ msgid "Succeeded"
 msgstr "投票通過"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Success"
 msgstr "成功"
 
@@ -2239,7 +2283,6 @@ msgstr "供應 {0} {1} 和 {2} {3}"
 #: src/components/NavBar/index.tsx
 #: src/components/Tokens/TokenDetails/MobileBalanceSummaryFooter.tsx
 #: src/components/swap/SwapHeader.tsx
-#: src/components/swap/SwapModalFooter.tsx
 #: src/components/swap/SwapSkeleton.tsx
 #: src/pages/Swap/index.tsx
 #: src/pages/Swap/index.tsx
@@ -2259,6 +2302,7 @@ msgid "Swap exactly <0/> for <1/>"
 msgstr "將恰好 <0/> 兌換成 <1/>"
 
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 msgid "Swap failed"
 msgstr "交換失敗"
 
@@ -2270,10 +2314,6 @@ msgstr "交換"
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
 msgid "Swapping"
 msgstr "交換"
-
-#: src/components/swap/ConfirmSwapModal.tsx
-msgid "Swapping {0} {1} for {2} {3}"
-msgstr "將 {0} {1} 兌換為 {2} {3}"
 
 #: src/nft/components/collection/Sweep.tsx
 msgid "Sweep"
@@ -2427,6 +2467,10 @@ msgstr "需要先初始化，然後再添加流動性。初始化時，請先選
 msgid "This proposal may be executed after {0}."
 msgstr "該提案可能會在 {0}之後執行。"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "This provides the Uniswap protocol access to your token for trading. For security, this will expire after 30 days."
+msgstr "這為 Uniswap 協議提供了對您的代幣進行交易的訪問權限。為了安全起見，這將在 30 天后過期。"
+
 #: src/components/swap/SwapRoute.tsx
 msgid "This route optimizes your total output by considering split routes, multiple hops, and the gas cost of each step."
 msgstr "此路線通過考慮拆分路線、多跳和每一步的 gas 成本來優化您的總輸出額。"
@@ -2493,6 +2537,10 @@ msgstr "要查看職位，您必須連接到它所屬的網絡。"
 #: src/components/AccountDrawer/MiniPortfolio/Activity/index.tsx
 msgid "Today"
 msgstr "今天"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Token approval failed"
+msgstr "令牌批准失敗"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
 msgid "Token name"
@@ -2580,6 +2628,7 @@ msgid "Transaction rejected"
 msgstr "交易被拒絕"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Transaction submitted"
 msgstr "交易已提交"
 
@@ -2790,6 +2839,7 @@ msgid "View on Etherscan"
 msgstr "在Etherscan上查看"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "View on Explorer"
 msgstr "在以太坊資源瀏覽器上查看"
 
@@ -2901,9 +2951,22 @@ msgstr "警告"
 msgid "Welcome to team Unicorn :)"
 msgstr "歡迎來到 Unicorn （獨角獸）團隊 :)"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are approvals required?"
+msgstr "為什麼需要批准？"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are permits required?"
+msgstr "為什麼需要許可證？"
+
 #: src/nft/components/profile/list/Modal/ListModalSection.tsx
 msgid "Why is a transaction required?"
 msgstr "為什麼需要交易？"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Why is this required?"
+msgstr "為什麼這是必需的？"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Withdraw deposited liquidity"

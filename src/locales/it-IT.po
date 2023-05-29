@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2023-05-22 22:30+0000\n"
+"POT-Creation-Date: 2023-05-26 23:08+0000\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Language: it\n"
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-05-23 20:46\n"
+"PO-Revision-Date: 2023-05-27 00:15\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -51,6 +51,18 @@ msgstr "+ Nuova posizione"
 #: src/pages/Swap/index.tsx
 msgid "- Remove recipient"
 msgstr "- Rimuovi destinatario"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 month"
+msgstr "1 mese"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 week"
+msgstr "1 settimana"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 year"
+msgstr "1 anno"
 
 #: src/components/Tokens/TokenDetails/StatsSection.tsx
 msgid "24H volume"
@@ -239,9 +251,17 @@ msgstr "L'indirizzo non ha alcun reclamo disponibile"
 msgid "Against"
 msgstr "Contro"
 
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "All time"
+msgstr "Sempre"
+
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allow LP token migration"
 msgstr "Consenti la migrazione del token LP"
+
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Allow {0} to be used for swapping"
+msgstr "Consentire l'utilizzo {0} per lo scambio"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -277,7 +297,6 @@ msgid "Approval failed"
 msgstr "Approvazione non riuscita"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approval pending"
 msgstr "In attesa di approvazione"
 
@@ -296,13 +315,8 @@ msgid "Approve in wallet"
 msgstr "Approva nel portafoglio"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approve in your wallet"
 msgstr "Approva nel tuo portafoglio"
-
-#: src/pages/Swap/index.tsx
-msgid "Approve use of {0}"
-msgstr "Approva l'uso di {0}"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 #: src/pages/AddLiquidity/index.tsx
@@ -625,6 +639,14 @@ msgstr "Conferma"
 msgid "Confirm Supply"
 msgstr "Conferma Fornitura"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Confirm Swap"
+msgstr "Conferma lo scambio"
+
+#: src/components/swap/SwapModalFooter.tsx
+msgid "Confirm swap"
+msgstr "Conferma lo scambio"
+
 #: src/components/ModalViews/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/claim/AddressClaimModal.tsx
@@ -843,7 +865,6 @@ msgstr "Dettagliato"
 msgid "Details"
 msgstr "Dettagli"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/nft/components/profile/list/PriceTextInput.tsx
 msgid "Dismiss"
 msgstr "Ignora"
@@ -892,6 +913,10 @@ msgstr "Modificare"
 msgid "Edit listings"
 msgstr "Modifica elenchi"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Enable spending limits for {0} on Uniswap"
+msgstr "Abilita i limiti di spesa per {0} su Uniswap"
+
 #: src/state/burn/v3/hooks.tsx
 msgid "Enter a percent"
 msgstr "Inserisci una percentuale"
@@ -916,7 +941,6 @@ msgstr "Inserisci un importo"
 msgid "Enter {0} amount"
 msgstr "Inserisci {0} importo"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/Web3Status/index.tsx
 msgid "Error"
@@ -1576,6 +1600,10 @@ msgstr "Non disponibile nella tua regione"
 msgid "Not created"
 msgstr "Non creato"
 
+#: src/components/CurrencyInputPanel/FiatValue.tsx
+msgid "Not enough liquidity to show accurate USD value."
+msgstr "Liquidità insufficiente per mostrare un valore in USD accurato."
+
 #: src/nft/components/collection/CollectionAsset.tsx
 msgid "Not listed"
 msgstr "Non elencato"
@@ -1651,13 +1679,21 @@ msgstr "Paga con"
 msgid "Pending"
 msgstr "In attesa di"
 
-#: src/pages/Swap/index.tsx
-msgid "Permission is required for Uniswap to swap each token. This will expire after one month for your security."
-msgstr "È necessaria l'autorizzazione affinché Uniswap possa scambiare ciascun token. Questo scadrà dopo un mese per la tua sicurezza."
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Pending..."
+msgstr "In attesa di..."
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit approval failed"
+msgstr "Approvazione del permesso non riuscita"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Permit2"
 msgstr "Permesso2"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit2 allows token approvals to be shared and managed across different applications."
+msgstr "Permit2 consente di condividere e gestire le approvazioni dei token tra diverse applicazioni."
 
 #: src/components/vote/ProposalEmptyState.tsx
 msgid "Please connect to Layer 1 Ethereum"
@@ -1771,6 +1807,12 @@ msgstr "Politica sulla riservatezza."
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Proceed in wallet"
 msgstr "Procedi nel portafoglio"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Proceed in your wallet"
+msgstr "Procedi nel tuo portafoglio"
 
 #: src/nft/components/profile/list/Modal/SuccessScreen.tsx
 msgid "Proceeds if sold"
@@ -1981,6 +2023,7 @@ msgstr "Rimborso"
 msgid "Resolve {issues} issues"
 msgstr "Risolvi {issues} problemi"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Retry"
 msgstr "Riprova"
@@ -2000,8 +2043,8 @@ msgid "Reverse Registrar"
 msgstr "Cancelliere inverso"
 
 #: src/components/swap/ConfirmSwapModal.tsx
-msgid "Review Swap"
-msgstr "Recensione Scambia"
+msgid "Review swap"
+msgstr "Scambio di recensioni"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Revoked Approval"
@@ -2221,6 +2264,7 @@ msgid "Succeeded"
 msgstr "Successo"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Success"
 msgstr "Successo"
 
@@ -2239,7 +2283,6 @@ msgstr "Fornitura di {0} {1} e {2} {3}"
 #: src/components/NavBar/index.tsx
 #: src/components/Tokens/TokenDetails/MobileBalanceSummaryFooter.tsx
 #: src/components/swap/SwapHeader.tsx
-#: src/components/swap/SwapModalFooter.tsx
 #: src/components/swap/SwapSkeleton.tsx
 #: src/pages/Swap/index.tsx
 #: src/pages/Swap/index.tsx
@@ -2259,6 +2302,7 @@ msgid "Swap exactly <0/> for <1/>"
 msgstr "Scambia esattamente <0/> con <1/>"
 
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 msgid "Swap failed"
 msgstr "Scambio fallito"
 
@@ -2270,10 +2314,6 @@ msgstr "Scambiato"
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
 msgid "Swapping"
 msgstr "Scambio"
-
-#: src/components/swap/ConfirmSwapModal.tsx
-msgid "Swapping {0} {1} for {2} {3}"
-msgstr "Scambio di {0} {1} per {2} {3}"
 
 #: src/nft/components/collection/Sweep.tsx
 msgid "Sweep"
@@ -2427,6 +2467,10 @@ msgstr "Questo pool deve essere inizializzato prima di poter aggiungere liquidit
 msgid "This proposal may be executed after {0}."
 msgstr "Questa proposta può essere eseguita dopo {0}."
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "This provides the Uniswap protocol access to your token for trading. For security, this will expire after 30 days."
+msgstr "Ciò fornisce al protocollo Uniswap l'accesso al tuo token per il trading. Per sicurezza, questo scadrà dopo 30 giorni."
+
 #: src/components/swap/SwapRoute.tsx
 msgid "This route optimizes your total output by considering split routes, multiple hops, and the gas cost of each step."
 msgstr "Questo percorso ottimizza la tua produzione totale considerando percorsi divisi, salti multipli e il costo del gas di ogni passaggio."
@@ -2493,6 +2537,10 @@ msgstr "Per visualizzare una posizione è necessario essere connessi alla rete d
 #: src/components/AccountDrawer/MiniPortfolio/Activity/index.tsx
 msgid "Today"
 msgstr "Oggi"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Token approval failed"
+msgstr "Approvazione del token non riuscita"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
 msgid "Token name"
@@ -2580,6 +2628,7 @@ msgid "Transaction rejected"
 msgstr "Transazione rifiutata"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Transaction submitted"
 msgstr "Transazione inviata"
 
@@ -2790,6 +2839,7 @@ msgid "View on Etherscan"
 msgstr "Visualizza su Etherscan"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "View on Explorer"
 msgstr "Visualizza su Explorer"
 
@@ -2901,9 +2951,22 @@ msgstr "Avvertimento"
 msgid "Welcome to team Unicorn :)"
 msgstr "Benvenuto nel team Unicorn :)"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are approvals required?"
+msgstr "Perché sono necessarie le approvazioni?"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are permits required?"
+msgstr "Perché servono i permessi?"
+
 #: src/nft/components/profile/list/Modal/ListModalSection.tsx
 msgid "Why is a transaction required?"
 msgstr "Perché è richiesta una transazione?"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Why is this required?"
+msgstr "Perché è necessario?"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Withdraw deposited liquidity"

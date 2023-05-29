@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2023-05-22 22:30+0000\n"
+"POT-Creation-Date: 2023-05-26 23:08+0000\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Language: he\n"
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-05-23 20:46\n"
+"PO-Revision-Date: 2023-05-27 00:15\n"
 "Last-Translator: \n"
 "Language-Team: Hebrew\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;\n"
@@ -51,6 +51,18 @@ msgstr "+ תפקיד חדש"
 #: src/pages/Swap/index.tsx
 msgid "- Remove recipient"
 msgstr "- הסר את הנמען"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 month"
+msgstr "1 חודש"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 week"
+msgstr "שבוע 1"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 year"
+msgstr "1 שנה"
 
 #: src/components/Tokens/TokenDetails/StatsSection.tsx
 msgid "24H volume"
@@ -239,9 +251,17 @@ msgstr "לכתובת אין כל תביעה זמינה"
 msgid "Against"
 msgstr "נגד"
 
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "All time"
+msgstr "כל הזמן"
+
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allow LP token migration"
 msgstr "אפשר העברת אסימון LP"
+
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Allow {0} to be used for swapping"
+msgstr "אפשר להשתמש {0} להחלפה"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -277,7 +297,6 @@ msgid "Approval failed"
 msgstr "האישור נכשל"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approval pending"
 msgstr "מחכה לאישור"
 
@@ -296,13 +315,8 @@ msgid "Approve in wallet"
 msgstr "אישור בארנק"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approve in your wallet"
 msgstr "אשר בארנק שלך"
-
-#: src/pages/Swap/index.tsx
-msgid "Approve use of {0}"
-msgstr "אשר שימוש ב {0}"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 #: src/pages/AddLiquidity/index.tsx
@@ -625,6 +639,14 @@ msgstr "לְאַשֵׁר"
 msgid "Confirm Supply"
 msgstr "אשר אספקה"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Confirm Swap"
+msgstr "אשר החלפה"
+
+#: src/components/swap/SwapModalFooter.tsx
+msgid "Confirm swap"
+msgstr "אשר את ההחלפה"
+
 #: src/components/ModalViews/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/claim/AddressClaimModal.tsx
@@ -843,7 +865,6 @@ msgstr "מְפוֹרָט"
 msgid "Details"
 msgstr "פרטים"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/nft/components/profile/list/PriceTextInput.tsx
 msgid "Dismiss"
 msgstr "לשחרר"
@@ -892,6 +913,10 @@ msgstr "לַעֲרוֹך"
 msgid "Edit listings"
 msgstr "ערוך רישומים"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Enable spending limits for {0} on Uniswap"
+msgstr "אפשר מגבלות הוצאה עבור {0} ב-Uniswap"
+
 #: src/state/burn/v3/hooks.tsx
 msgid "Enter a percent"
 msgstr "הזן אחוז"
@@ -916,7 +941,6 @@ msgstr "הזן סכום"
 msgid "Enter {0} amount"
 msgstr "הזן סכום {0}"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/Web3Status/index.tsx
 msgid "Error"
@@ -1576,6 +1600,10 @@ msgstr "לא זמין באזור שלך"
 msgid "Not created"
 msgstr "לא נוצר"
 
+#: src/components/CurrencyInputPanel/FiatValue.tsx
+msgid "Not enough liquidity to show accurate USD value."
+msgstr "אין מספיק נזילות כדי להציג ערך מדויק של דולר ארה\"ב."
+
 #: src/nft/components/collection/CollectionAsset.tsx
 msgid "Not listed"
 msgstr "לא רשום"
@@ -1651,13 +1679,21 @@ msgstr "לשלם עם"
 msgid "Pending"
 msgstr "ממתין ל"
 
-#: src/pages/Swap/index.tsx
-msgid "Permission is required for Uniswap to swap each token. This will expire after one month for your security."
-msgstr "נדרשת הרשאה עבור Uniswap להחליף כל אסימון. תוקף זה יפוג לאחר חודש לביטחון שלך."
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Pending..."
+msgstr "ממתין ל..."
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit approval failed"
+msgstr "אישור ההיתר נכשל"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Permit2"
 msgstr "היתר2"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit2 allows token approvals to be shared and managed across different applications."
+msgstr "Permit2 מאפשר שיתוף וניהול של אישורי אסימונים בין יישומים שונים."
 
 #: src/components/vote/ProposalEmptyState.tsx
 msgid "Please connect to Layer 1 Ethereum"
@@ -1771,6 +1807,12 @@ msgstr "מדיניות הפרטיות."
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Proceed in wallet"
 msgstr "המשך בארנק"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Proceed in your wallet"
+msgstr "המשך בארנק שלך"
 
 #: src/nft/components/profile/list/Modal/SuccessScreen.tsx
 msgid "Proceeds if sold"
@@ -1981,6 +2023,7 @@ msgstr "מחזיר"
 msgid "Resolve {issues} issues"
 msgstr "פתור {issues} בעיות"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Retry"
 msgstr "נסה שוב"
@@ -2000,8 +2043,8 @@ msgid "Reverse Registrar"
 msgstr "רשם הפוך"
 
 #: src/components/swap/ConfirmSwapModal.tsx
-msgid "Review Swap"
-msgstr "סקירת Swap"
+msgid "Review swap"
+msgstr "סקירת החלפה"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Revoked Approval"
@@ -2221,6 +2264,7 @@ msgid "Succeeded"
 msgstr "הצליח"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Success"
 msgstr "הַצלָחָה"
 
@@ -2239,7 +2283,6 @@ msgstr "אספקת {0} {1} ו {2} {3}"
 #: src/components/NavBar/index.tsx
 #: src/components/Tokens/TokenDetails/MobileBalanceSummaryFooter.tsx
 #: src/components/swap/SwapHeader.tsx
-#: src/components/swap/SwapModalFooter.tsx
 #: src/components/swap/SwapSkeleton.tsx
 #: src/pages/Swap/index.tsx
 #: src/pages/Swap/index.tsx
@@ -2259,6 +2302,7 @@ msgid "Swap exactly <0/> for <1/>"
 msgstr "החלף בדיוק <0/> ב <1/>"
 
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 msgid "Swap failed"
 msgstr "ההחלפה נכשלה"
 
@@ -2270,10 +2314,6 @@ msgstr "הוחלף"
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
 msgid "Swapping"
 msgstr "החלפה"
-
-#: src/components/swap/ConfirmSwapModal.tsx
-msgid "Swapping {0} {1} for {2} {3}"
-msgstr "החלפת {0} {1} ב- {2} {3}"
 
 #: src/nft/components/collection/Sweep.tsx
 msgid "Sweep"
@@ -2427,6 +2467,10 @@ msgstr "יש לאתחל את המאגר הזה לפני שתוכל להוסיף 
 msgid "This proposal may be executed after {0}."
 msgstr "הצעה זו עשויה להתבצע לאחר {0}."
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "This provides the Uniswap protocol access to your token for trading. For security, this will expire after 30 days."
+msgstr "זה מספק לפרוטוקול Uniswap גישה לטוקן שלך למסחר. מטעמי אבטחה, תוקף זה יפוג לאחר 30 יום."
+
 #: src/components/swap/SwapRoute.tsx
 msgid "This route optimizes your total output by considering split routes, multiple hops, and the gas cost of each step."
 msgstr "מסלול זה מייעל את התפוקה הכוללת שלך על ידי התחשבות במסלולים מפוצלים, ריבוי דילוגים ועלות הגז של כל שלב."
@@ -2493,6 +2537,10 @@ msgstr "כדי להציג עמדה, עליך להיות מחובר לרשת שא
 #: src/components/AccountDrawer/MiniPortfolio/Activity/index.tsx
 msgid "Today"
 msgstr "היום"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Token approval failed"
+msgstr "אישור האסימון נכשל"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
 msgid "Token name"
@@ -2580,6 +2628,7 @@ msgid "Transaction rejected"
 msgstr "העסקה נדחתה"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Transaction submitted"
 msgstr "העסקה הוגשה"
 
@@ -2790,6 +2839,7 @@ msgid "View on Etherscan"
 msgstr "מבט על אתרסקאן"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "View on Explorer"
 msgstr "צפה ב- Explorer"
 
@@ -2901,9 +2951,22 @@ msgstr "אַזהָרָה"
 msgid "Welcome to team Unicorn :)"
 msgstr "ברוך הבא לצוות חד קרן :)"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are approvals required?"
+msgstr "מדוע נדרשים אישורים?"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are permits required?"
+msgstr "מדוע נדרשים אישורים?"
+
 #: src/nft/components/profile/list/Modal/ListModalSection.tsx
 msgid "Why is a transaction required?"
 msgstr "מדוע נדרשת עסקה?"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Why is this required?"
+msgstr "למה זה נדרש?"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Withdraw deposited liquidity"

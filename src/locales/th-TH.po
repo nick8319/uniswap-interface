@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2023-05-22 22:30+0000\n"
+"POT-Creation-Date: 2023-05-26 23:08+0000\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Language: th\n"
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-05-23 20:46\n"
+"PO-Revision-Date: 2023-05-27 00:15\n"
 "Last-Translator: \n"
 "Language-Team: Thai\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -51,6 +51,18 @@ msgstr "+ ตำแหน่งใหม่"
 #: src/pages/Swap/index.tsx
 msgid "- Remove recipient"
 msgstr "- ลบผู้รับ"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 month"
+msgstr "1 เดือน"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 week"
+msgstr "1 สัปดาห์"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 year"
+msgstr "1 ปี"
 
 #: src/components/Tokens/TokenDetails/StatsSection.tsx
 msgid "24H volume"
@@ -239,9 +251,17 @@ msgstr "ที่อยู่ไม่มีการอ้างสิทธิ
 msgid "Against"
 msgstr "ขัดต่อ"
 
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "All time"
+msgstr "ตลอดเวลา"
+
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allow LP token migration"
 msgstr "อนุญาตการย้ายโทเค็น LP"
+
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Allow {0} to be used for swapping"
+msgstr "อนุญาตให้ใช้ {0} สำหรับการแลกเปลี่ยน"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -277,7 +297,6 @@ msgid "Approval failed"
 msgstr "การอนุมัติล้มเหลว"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approval pending"
 msgstr "รอการอนุมัติ"
 
@@ -296,13 +315,8 @@ msgid "Approve in wallet"
 msgstr "อนุมัติในกระเป๋าเงิน"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approve in your wallet"
 msgstr "อนุมัติในกระเป๋าเงินของคุณ"
-
-#: src/pages/Swap/index.tsx
-msgid "Approve use of {0}"
-msgstr "อนุมัติการใช้ {0}"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 #: src/pages/AddLiquidity/index.tsx
@@ -625,6 +639,14 @@ msgstr "ยืนยัน"
 msgid "Confirm Supply"
 msgstr "ยืนยันการจัดหา"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Confirm Swap"
+msgstr "ยืนยันการแลกเปลี่ยน"
+
+#: src/components/swap/SwapModalFooter.tsx
+msgid "Confirm swap"
+msgstr "ยืนยันการแลกเปลี่ยน"
+
 #: src/components/ModalViews/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/claim/AddressClaimModal.tsx
@@ -843,7 +865,6 @@ msgstr "รายละเอียด"
 msgid "Details"
 msgstr "รายละเอียด"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/nft/components/profile/list/PriceTextInput.tsx
 msgid "Dismiss"
 msgstr "อนุญาตให้ออกไป"
@@ -892,6 +913,10 @@ msgstr "แก้ไข"
 msgid "Edit listings"
 msgstr "แก้ไขรายชื่อ"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Enable spending limits for {0} on Uniswap"
+msgstr "เปิดใช้งานวงเงินการใช้จ่ายเป็น {0} ใน Uniswap"
+
 #: src/state/burn/v3/hooks.tsx
 msgid "Enter a percent"
 msgstr "ป้อนเปอร์เซ็นต์"
@@ -916,7 +941,6 @@ msgstr "ใส่จำนวนเงิน"
 msgid "Enter {0} amount"
 msgstr "ใส่ {0} จำนวนเงิน"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/Web3Status/index.tsx
 msgid "Error"
@@ -1576,6 +1600,10 @@ msgstr "ไม่มีให้บริการในภูมิภาคข
 msgid "Not created"
 msgstr "ไม่ได้สร้างขึ้น"
 
+#: src/components/CurrencyInputPanel/FiatValue.tsx
+msgid "Not enough liquidity to show accurate USD value."
+msgstr "สภาพคล่องไม่เพียงพอที่จะแสดงมูลค่า USD ที่ถูกต้อง"
+
 #: src/nft/components/collection/CollectionAsset.tsx
 msgid "Not listed"
 msgstr "ไม่ได้อยู่ในรายการ"
@@ -1651,13 +1679,21 @@ msgstr "ชำระเงินด้วย"
 msgid "Pending"
 msgstr "รอดำเนินการ"
 
-#: src/pages/Swap/index.tsx
-msgid "Permission is required for Uniswap to swap each token. This will expire after one month for your security."
-msgstr "ต้องได้รับอนุญาตสำหรับ Uniswap เพื่อแลกเปลี่ยนแต่ละโทเค็น สิ่งนี้จะหมดอายุหลังจากหนึ่งเดือนเพื่อความปลอดภัยของคุณ"
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Pending..."
+msgstr "รอดำเนินการ..."
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit approval failed"
+msgstr "การอนุมัติใบอนุญาตล้มเหลว"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Permit2"
 msgstr "ใบอนุญาต2"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit2 allows token approvals to be shared and managed across different applications."
+msgstr "Permit2 อนุญาตให้แชร์และจัดการการอนุมัติโทเค็นระหว่างแอปพลิเคชันต่างๆ"
 
 #: src/components/vote/ProposalEmptyState.tsx
 msgid "Please connect to Layer 1 Ethereum"
@@ -1771,6 +1807,12 @@ msgstr "นโยบายความเป็นส่วนตัว."
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Proceed in wallet"
 msgstr "ดำเนินการในกระเป๋าสตางค์"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Proceed in your wallet"
+msgstr "ดำเนินการต่อในกระเป๋าเงินของคุณ"
 
 #: src/nft/components/profile/list/Modal/SuccessScreen.tsx
 msgid "Proceeds if sold"
@@ -1981,6 +2023,7 @@ msgstr "การชำระคืน"
 msgid "Resolve {issues} issues"
 msgstr "แก้ไขปัญหา {issues} รายการ"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Retry"
 msgstr "ลองอีกครั้ง"
@@ -2000,8 +2043,8 @@ msgid "Reverse Registrar"
 msgstr "ย้อนกลับนายทะเบียน"
 
 #: src/components/swap/ConfirmSwapModal.tsx
-msgid "Review Swap"
-msgstr "ตรวจสอบการแลกเปลี่ยน"
+msgid "Review swap"
+msgstr "แลกเปลี่ยนรีวิว"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Revoked Approval"
@@ -2221,6 +2264,7 @@ msgid "Succeeded"
 msgstr "ที่ประสบความสำเร็จ"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Success"
 msgstr "ความสำเร็จ"
 
@@ -2239,7 +2283,6 @@ msgstr "จัดหา {0} {1} และ {2} {3}"
 #: src/components/NavBar/index.tsx
 #: src/components/Tokens/TokenDetails/MobileBalanceSummaryFooter.tsx
 #: src/components/swap/SwapHeader.tsx
-#: src/components/swap/SwapModalFooter.tsx
 #: src/components/swap/SwapSkeleton.tsx
 #: src/pages/Swap/index.tsx
 #: src/pages/Swap/index.tsx
@@ -2259,6 +2302,7 @@ msgid "Swap exactly <0/> for <1/>"
 msgstr "สลับ <0/> ต่อ <1/>"
 
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 msgid "Swap failed"
 msgstr "การสลับล้มเหลว"
 
@@ -2270,10 +2314,6 @@ msgstr "เปลี่ยน"
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
 msgid "Swapping"
 msgstr "การแลกเปลี่ยน"
-
-#: src/components/swap/ConfirmSwapModal.tsx
-msgid "Swapping {0} {1} for {2} {3}"
-msgstr "เปลี่ยน {0} {1} เป็น {2} {3}"
 
 #: src/nft/components/collection/Sweep.tsx
 msgid "Sweep"
@@ -2427,6 +2467,10 @@ msgstr "ต้องเตรียมใช้งานพูลนี้ก่
 msgid "This proposal may be executed after {0}."
 msgstr "ข้อเสนอนี้อาจดำเนินการหลังจาก {0}"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "This provides the Uniswap protocol access to your token for trading. For security, this will expire after 30 days."
+msgstr "สิ่งนี้ให้โปรโตคอล Uniswap เข้าถึงโทเค็นของคุณสำหรับการซื้อขาย เพื่อความปลอดภัย ข้อมูลนี้จะหมดอายุหลังจาก 30 วัน"
+
 #: src/components/swap/SwapRoute.tsx
 msgid "This route optimizes your total output by considering split routes, multiple hops, and the gas cost of each step."
 msgstr "เส้นทางนี้ปรับเอาต์พุตทั้งหมดของคุณให้เหมาะสมโดยพิจารณาเส้นทางแยก การกระโดดหลายครั้ง และต้นทุนก๊าซของแต่ละขั้นตอน"
@@ -2493,6 +2537,10 @@ msgstr "หากต้องการดูตำแหน่ง คุณต�
 #: src/components/AccountDrawer/MiniPortfolio/Activity/index.tsx
 msgid "Today"
 msgstr "วันนี้"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Token approval failed"
+msgstr "การอนุมัติโทเค็นล้มเหลว"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
 msgid "Token name"
@@ -2580,6 +2628,7 @@ msgid "Transaction rejected"
 msgstr "ธุรกรรมถูกปฏิเสธ"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Transaction submitted"
 msgstr "ส่งธุรกรรมแล้ว"
 
@@ -2790,6 +2839,7 @@ msgid "View on Etherscan"
 msgstr "ดูบน Etherscan"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "View on Explorer"
 msgstr "ดูบน Explorer"
 
@@ -2901,9 +2951,22 @@ msgstr "คำเตือน"
 msgid "Welcome to team Unicorn :)"
 msgstr "ยินดีต้อนรับสู่ทีมยูนิคอร์น :)"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are approvals required?"
+msgstr "ทำไมต้องมีการอนุมัติ?"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are permits required?"
+msgstr "ทำไมต้องมีใบอนุญาต?"
+
 #: src/nft/components/profile/list/Modal/ListModalSection.tsx
 msgid "Why is a transaction required?"
 msgstr "ทำไมจึงต้องทำธุรกรรม?"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Why is this required?"
+msgstr "ทำไมสิ่งนี้จึงจำเป็น?"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Withdraw deposited liquidity"

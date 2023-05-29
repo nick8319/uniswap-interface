@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2023-05-22 22:30+0000\n"
+"POT-Creation-Date: 2023-05-26 23:08+0000\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Language: vi\n"
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-05-23 20:46\n"
+"PO-Revision-Date: 2023-05-27 00:15\n"
 "Last-Translator: \n"
 "Language-Team: Vietnamese\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -51,6 +51,18 @@ msgstr "+ Vị trí mới"
 #: src/pages/Swap/index.tsx
 msgid "- Remove recipient"
 msgstr "- Xóa người nhận"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 month"
+msgstr "1 tháng"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 week"
+msgstr "1 tuần"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 year"
+msgstr "1 năm"
 
 #: src/components/Tokens/TokenDetails/StatsSection.tsx
 msgid "24H volume"
@@ -239,9 +251,17 @@ msgstr "Địa chỉ không có yêu cầu"
 msgid "Against"
 msgstr "Chống lại"
 
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "All time"
+msgstr "Mọi thời đại"
+
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allow LP token migration"
 msgstr "Cho phép di chuyển mã token LP"
+
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Allow {0} to be used for swapping"
+msgstr "Cho phép {0} được sử dụng để hoán đổi"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -277,7 +297,6 @@ msgid "Approval failed"
 msgstr "Phê duyệt không thành công"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approval pending"
 msgstr "Đang chờ phê duyệt"
 
@@ -296,13 +315,8 @@ msgid "Approve in wallet"
 msgstr "Phê duyệt trong ví"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approve in your wallet"
 msgstr "Phê duyệt trong ví của bạn"
-
-#: src/pages/Swap/index.tsx
-msgid "Approve use of {0}"
-msgstr "Phê duyệt sử dụng {0}"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 #: src/pages/AddLiquidity/index.tsx
@@ -625,6 +639,14 @@ msgstr "Xác nhận"
 msgid "Confirm Supply"
 msgstr "Xác nhận cung cấp"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Confirm Swap"
+msgstr "Xác nhận Hoán đổi"
+
+#: src/components/swap/SwapModalFooter.tsx
+msgid "Confirm swap"
+msgstr "xác nhận trao đổi"
+
 #: src/components/ModalViews/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/claim/AddressClaimModal.tsx
@@ -843,7 +865,6 @@ msgstr "Chi tiết"
 msgid "Details"
 msgstr "Chi tiết"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/nft/components/profile/list/PriceTextInput.tsx
 msgid "Dismiss"
 msgstr "Bỏ qua"
@@ -892,6 +913,10 @@ msgstr "Biên tập"
 msgid "Edit listings"
 msgstr "chỉnh sửa danh sách"
 
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Enable spending limits for {0} on Uniswap"
+msgstr "Kích hoạt giới hạn chi tiêu cho {0} trên Uniswap"
+
 #: src/state/burn/v3/hooks.tsx
 msgid "Enter a percent"
 msgstr "Nhập một phần trăm"
@@ -916,7 +941,6 @@ msgstr "Nhập số tiền"
 msgid "Enter {0} amount"
 msgstr "Nhập {0} số tiền"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/Web3Status/index.tsx
 msgid "Error"
@@ -1576,6 +1600,10 @@ msgstr "Không có sẵn trong khu vực của bạn"
 msgid "Not created"
 msgstr "Chưa tạo"
 
+#: src/components/CurrencyInputPanel/FiatValue.tsx
+msgid "Not enough liquidity to show accurate USD value."
+msgstr "Không đủ thanh khoản để hiển thị giá trị USD chính xác."
+
 #: src/nft/components/collection/CollectionAsset.tsx
 msgid "Not listed"
 msgstr "Không được liệt kê"
@@ -1651,13 +1679,21 @@ msgstr "Thanh toán bằng"
 msgid "Pending"
 msgstr "Chưa giải quyết"
 
-#: src/pages/Swap/index.tsx
-msgid "Permission is required for Uniswap to swap each token. This will expire after one month for your security."
-msgstr "Cần có quyền để Uniswap hoán đổi từng mã thông báo. Điều này sẽ hết hạn sau một tháng để bảo mật cho bạn."
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Pending..."
+msgstr "Chưa giải quyết..."
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit approval failed"
+msgstr "Phê duyệt giấy phép không thành công"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Permit2"
 msgstr "giấy phép2"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit2 allows token approvals to be shared and managed across different applications."
+msgstr "Permit2 cho phép chia sẻ và quản lý phê duyệt mã thông báo trên các ứng dụng khác nhau."
 
 #: src/components/vote/ProposalEmptyState.tsx
 msgid "Please connect to Layer 1 Ethereum"
@@ -1771,6 +1807,12 @@ msgstr "Chính sách bảo mật."
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Proceed in wallet"
 msgstr "Tiếp tục trong ví"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Proceed in your wallet"
+msgstr "Tiếp tục trong ví của bạn"
 
 #: src/nft/components/profile/list/Modal/SuccessScreen.tsx
 msgid "Proceeds if sold"
@@ -1981,6 +2023,7 @@ msgstr "trả nợ"
 msgid "Resolve {issues} issues"
 msgstr "Giải quyết {issues} vấn đề"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Retry"
 msgstr "Thử lại"
@@ -2000,8 +2043,8 @@ msgid "Reverse Registrar"
 msgstr "Công ty đăng ký đảo ngược"
 
 #: src/components/swap/ConfirmSwapModal.tsx
-msgid "Review Swap"
-msgstr "Đánh giá Hoán đổi"
+msgid "Review swap"
+msgstr "Đánh giá hoán đổi"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Revoked Approval"
@@ -2221,6 +2264,7 @@ msgid "Succeeded"
 msgstr "thành công"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Success"
 msgstr "Sự thành công"
 
@@ -2239,7 +2283,6 @@ msgstr "Cung cấp {0} {1} và {2} {3}"
 #: src/components/NavBar/index.tsx
 #: src/components/Tokens/TokenDetails/MobileBalanceSummaryFooter.tsx
 #: src/components/swap/SwapHeader.tsx
-#: src/components/swap/SwapModalFooter.tsx
 #: src/components/swap/SwapSkeleton.tsx
 #: src/pages/Swap/index.tsx
 #: src/pages/Swap/index.tsx
@@ -2259,6 +2302,7 @@ msgid "Swap exactly <0/> for <1/>"
 msgstr "Hoán đổi chính xác <0/> cho <1/>"
 
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 msgid "Swap failed"
 msgstr "Hoán đổi không thành công"
 
@@ -2270,10 +2314,6 @@ msgstr "hoán đổi"
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
 msgid "Swapping"
 msgstr "hoán đổi"
-
-#: src/components/swap/ConfirmSwapModal.tsx
-msgid "Swapping {0} {1} for {2} {3}"
-msgstr "Đổi {0} {1} lấy {2} {3}"
 
 #: src/nft/components/collection/Sweep.tsx
 msgid "Sweep"
@@ -2427,6 +2467,10 @@ msgstr "Nhóm này phải được khởi tạo trước khi bạn có thể th�
 msgid "This proposal may be executed after {0}."
 msgstr "Đề xuất này có thể được thực hiện sau {0}."
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "This provides the Uniswap protocol access to your token for trading. For security, this will expire after 30 days."
+msgstr "Điều này cung cấp quyền truy cập giao thức Uniswap vào mã thông báo của bạn để giao dịch. Để bảo mật, điều này sẽ hết hạn sau 30 ngày."
+
 #: src/components/swap/SwapRoute.tsx
 msgid "This route optimizes your total output by considering split routes, multiple hops, and the gas cost of each step."
 msgstr "Tuyến đường này tối ưu hóa tổng sản lượng của bạn bằng cách xem xét các tuyến đường được phân chia, nhiều bước nhảy và chi phí xăng của mỗi bước."
@@ -2493,6 +2537,10 @@ msgstr "Để xem một vị trí, bạn phải kết nối với mạng của v
 #: src/components/AccountDrawer/MiniPortfolio/Activity/index.tsx
 msgid "Today"
 msgstr "Hôm nay"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Token approval failed"
+msgstr "Phê duyệt mã thông báo không thành công"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
 msgid "Token name"
@@ -2580,6 +2628,7 @@ msgid "Transaction rejected"
 msgstr "Giao dịch bị từ chối"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Transaction submitted"
 msgstr "Giao dịch đã được gửi"
 
@@ -2790,6 +2839,7 @@ msgid "View on Etherscan"
 msgstr "Xem trên Etherscan"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "View on Explorer"
 msgstr "Xem trên Explorer"
 
@@ -2901,9 +2951,22 @@ msgstr "Cảnh báo"
 msgid "Welcome to team Unicorn :)"
 msgstr "Chào mừng đến với đội Unicorn :)"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are approvals required?"
+msgstr "Tại sao cần phải phê duyệt?"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are permits required?"
+msgstr "Tại sao phải có giấy phép?"
+
 #: src/nft/components/profile/list/Modal/ListModalSection.tsx
 msgid "Why is a transaction required?"
 msgstr "Tại sao phải giao dịch?"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Why is this required?"
+msgstr "Tại sao điều này là bắt buộc?"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Withdraw deposited liquidity"

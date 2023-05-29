@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2023-05-22 22:30+0000\n"
+"POT-Creation-Date: 2023-05-26 23:08+0000\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Language: ja\n"
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-05-23 20:46\n"
+"PO-Revision-Date: 2023-05-27 00:15\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -51,6 +51,18 @@ msgstr "+ 新しいポジション"
 #: src/pages/Swap/index.tsx
 msgid "- Remove recipient"
 msgstr "宛先を削除"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 month"
+msgstr "1ヶ月"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 week"
+msgstr "1週間"
+
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "1 year"
+msgstr "1年"
 
 #: src/components/Tokens/TokenDetails/StatsSection.tsx
 msgid "24H volume"
@@ -239,9 +251,17 @@ msgstr "請求可能なアドレスではありません"
 msgid "Against"
 msgstr "反対"
 
+#: src/nft/components/details/detailsV2/TimePeriodSwitcher.tsx
+msgid "All time"
+msgstr "ずっと"
+
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allow LP token migration"
 msgstr "LPトークンの移行を許可する"
+
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Allow {0} to be used for swapping"
+msgstr "スワップに {0} を使用できるようにする"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -277,7 +297,6 @@ msgid "Approval failed"
 msgstr "承認に失敗しました"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approval pending"
 msgstr "承認待ち"
 
@@ -296,13 +315,8 @@ msgid "Approve in wallet"
 msgstr "ウォレットで承認する"
 
 #: src/nft/components/bag/BagFooter.tsx
-#: src/pages/Swap/index.tsx
 msgid "Approve in your wallet"
 msgstr "ウォレットで承認する"
-
-#: src/pages/Swap/index.tsx
-msgid "Approve use of {0}"
-msgstr "{0}の使用を承認する"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 #: src/pages/AddLiquidity/index.tsx
@@ -409,15 +423,15 @@ msgstr "買った"
 
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
 msgid "Burn failed"
-msgstr "書き込みに失敗しました"
+msgstr "バーンに失敗しました"
 
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
 msgid "Burned"
-msgstr "やけど"
+msgstr "バーンされました"
 
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
 msgid "Burning"
-msgstr "燃焼"
+msgstr "バーン中"
 
 #: src/components/swap/SwapBuyFiatButton.tsx
 #: src/nft/components/details/detailsV2/BuyButton.tsx
@@ -426,7 +440,7 @@ msgstr "買う"
 
 #: src/components/AccountDrawer/AuthenticatedHeader.tsx
 msgid "Buy crypto"
-msgstr "暗号通貨を購入する"
+msgstr "暗号資産の購入"
 
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
 msgid "Buy failed"
@@ -624,6 +638,14 @@ msgstr "確認"
 #: src/pages/AddLiquidityV2/ConfirmAddModalBottom.tsx
 msgid "Confirm Supply"
 msgstr "供給を確認"
+
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Confirm Swap"
+msgstr "スワップの確認"
+
+#: src/components/swap/SwapModalFooter.tsx
+msgid "Confirm swap"
+msgstr "スワップを確認する"
 
 #: src/components/ModalViews/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
@@ -843,7 +865,6 @@ msgstr "詳細"
 msgid "Details"
 msgstr "詳細"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/nft/components/profile/list/PriceTextInput.tsx
 msgid "Dismiss"
 msgstr "注文を取り下げる"
@@ -874,7 +895,7 @@ msgstr "アプリをダウンロードする"
 
 #: src/components/AccountDrawer/UniwalletModal.tsx
 msgid "Download in the App Store to safely store your tokens and NFTs, swap tokens, and connect to crypto apps."
-msgstr "App Store でダウンロードして、トークンと NFT を安全に保存し、トークンを交換し、暗号化アプリに接続します。"
+msgstr "トークンと NFT を安全に保存しながら、トークンをスワップし、暗号資産アプリに接続するため、App Store でダウンロードしましょう。"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "ETH Registrar Controller"
@@ -891,6 +912,10 @@ msgstr "編集"
 #: src/nft/components/profile/list/Modal/BelowFloorWarningModal.tsx
 msgid "Edit listings"
 msgstr "リストを編集"
+
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Enable spending limits for {0} on Uniswap"
+msgstr "Uniswap で {0} の支出制限を有効にする"
 
 #: src/state/burn/v3/hooks.tsx
 msgid "Enter a percent"
@@ -916,7 +941,6 @@ msgstr "数量を入力してください"
 msgid "Enter {0} amount"
 msgstr "{0} の数量を入力してください"
 
-#: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/Web3Status/index.tsx
 msgid "Error"
@@ -1576,6 +1600,10 @@ msgstr "お住いの国ではご利用いただけません"
 msgid "Not created"
 msgstr "未作成"
 
+#: src/components/CurrencyInputPanel/FiatValue.tsx
+msgid "Not enough liquidity to show accurate USD value."
+msgstr "正確な米ドルの価値を表示するのに十分な流動性がありません。"
+
 #: src/nft/components/collection/CollectionAsset.tsx
 msgid "Not listed"
 msgstr "記載されていない"
@@ -1651,13 +1679,21 @@ msgstr "で支払う"
 msgid "Pending"
 msgstr "保留中"
 
-#: src/pages/Swap/index.tsx
-msgid "Permission is required for Uniswap to swap each token. This will expire after one month for your security."
-msgstr "Uniswap が各トークンを交換するには許可が必要です。これは安全のため 1 か月後に期限切れになります。"
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Pending..."
+msgstr "保留中..."
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit approval failed"
+msgstr "許可の承認に失敗しました"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Permit2"
 msgstr "許可2"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Permit2 allows token approvals to be shared and managed across different applications."
+msgstr "Permit2 を使用すると、トークンの承認をさまざまなアプリケーション間で共有および管理できます。"
 
 #: src/components/vote/ProposalEmptyState.tsx
 msgid "Please connect to Layer 1 Ethereum"
@@ -1765,12 +1801,18 @@ msgstr "個人情報保護方針"
 
 #: src/components/WalletModal/PrivacyPolicyNotice.tsx
 msgid "Privacy Policy."
-msgstr "プライバシーポリシー。"
+msgstr "個人情報保護方針"
 
 #: src/nft/components/bag/BagFooter.tsx
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Proceed in wallet"
 msgstr "ウォレットで続行"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Proceed in your wallet"
+msgstr "ウォレットで続行してください"
 
 #: src/nft/components/profile/list/Modal/SuccessScreen.tsx
 msgid "Proceeds if sold"
@@ -1981,6 +2023,7 @@ msgstr "返済中"
 msgid "Resolve {issues} issues"
 msgstr "{issues} 件の問題を解決する"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 #: src/nft/components/profile/list/Modal/ContentRow.tsx
 msgid "Retry"
 msgstr "リトライ"
@@ -2000,8 +2043,8 @@ msgid "Reverse Registrar"
 msgstr "逆引きレジストラ"
 
 #: src/components/swap/ConfirmSwapModal.tsx
-msgid "Review Swap"
-msgstr "レビュースワップ"
+msgid "Review swap"
+msgstr "スワップを確認する"
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/parseRemote.tsx
 msgid "Revoked Approval"
@@ -2221,6 +2264,7 @@ msgid "Succeeded"
 msgstr "成功"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Success"
 msgstr "成功"
 
@@ -2239,7 +2283,6 @@ msgstr "{0} {1} と {2} {3} を追加中"
 #: src/components/NavBar/index.tsx
 #: src/components/Tokens/TokenDetails/MobileBalanceSummaryFooter.tsx
 #: src/components/swap/SwapHeader.tsx
-#: src/components/swap/SwapModalFooter.tsx
 #: src/components/swap/SwapSkeleton.tsx
 #: src/pages/Swap/index.tsx
 #: src/pages/Swap/index.tsx
@@ -2259,6 +2302,7 @@ msgid "Swap exactly <0/> for <1/>"
 msgstr "<0/>を<1/>にスワップ"
 
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
 msgid "Swap failed"
 msgstr "スワップに失敗しました"
 
@@ -2270,10 +2314,6 @@ msgstr "スワップ成功"
 #: src/components/AccountDrawer/MiniPortfolio/constants.ts
 msgid "Swapping"
 msgstr "スワップ中"
-
-#: src/components/swap/ConfirmSwapModal.tsx
-msgid "Swapping {0} {1} for {2} {3}"
-msgstr "{0} {1} を {2} {3} にスワップ中"
 
 #: src/nft/components/collection/Sweep.tsx
 msgid "Sweep"
@@ -2427,6 +2467,10 @@ msgstr "流動性を追加する前に、このプールを初期化する必要
 msgid "This proposal may be executed after {0}."
 msgstr "この提案は {0} の後に実行される可能性があります。"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "This provides the Uniswap protocol access to your token for trading. For security, this will expire after 30 days."
+msgstr "これにより、Uniswap プロトコルが取引のためにトークンにアクセスできるようになります。セキュリティのため、これは 30 日後に期限切れになります。"
+
 #: src/components/swap/SwapRoute.tsx
 msgid "This route optimizes your total output by considering split routes, multiple hops, and the gas cost of each step."
 msgstr "このルートは、分割ルート、複数のホップ、各ステップのガス コストを考慮して、総出力を最適化します。"
@@ -2493,6 +2537,10 @@ msgstr "位置を表示するには、その位置が属するネットワーク
 #: src/components/AccountDrawer/MiniPortfolio/Activity/index.tsx
 msgid "Today"
 msgstr "今日"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Token approval failed"
+msgstr "トークンの承認に失敗しました"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
 msgid "Token name"
@@ -2580,6 +2628,7 @@ msgid "Transaction rejected"
 msgstr "取引拒否"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "Transaction submitted"
 msgstr "取引は送信されました"
 
@@ -2790,6 +2839,7 @@ msgid "View on Etherscan"
 msgstr "Etherscanで見る"
 
 #: src/components/TransactionConfirmationModal/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
 msgid "View on Explorer"
 msgstr "エクスプローラーで見る"
 
@@ -2901,9 +2951,22 @@ msgstr "警告"
 msgid "Welcome to team Unicorn :)"
 msgstr "チーム ユニコーンへようこそ"
 
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are approvals required?"
+msgstr "なぜ承認が必要なのでしょうか?"
+
+#: src/components/swap/PendingModalContent/ErrorModalContent.tsx
+msgid "Why are permits required?"
+msgstr "なぜ許可が必要なのでしょうか?"
+
 #: src/nft/components/profile/list/Modal/ListModalSection.tsx
 msgid "Why is a transaction required?"
 msgstr "なぜトランザクションが必要なのでしょうか?"
+
+#: src/components/swap/PendingModalContent/index.tsx
+#: src/components/swap/PendingModalContent/index.tsx
+msgid "Why is this required?"
+msgstr "なぜこれが必要なのでしょうか?"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Withdraw deposited liquidity"
@@ -3284,7 +3347,7 @@ msgstr "{0}％が選択"
 
 #: src/components/Settings/MenuButton/index.tsx
 msgid "{0}% slippage"
-msgstr "{0}% の滑り"
+msgstr "{0}% のスリッページ"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "{0}/{1} LP NFT"
