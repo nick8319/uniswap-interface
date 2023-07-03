@@ -1,7 +1,7 @@
 import { skipToken } from '@reduxjs/toolkit/query/react'
 import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
-import { IMetric, MetricLoggerUnit, setGlobalMetric } from '@uniswap/smart-order-router'
-import { sendTiming } from 'components/analytics'
+//import { IMetric, MetricLoggerUnit, setGlobalMetric } from '@uniswap/smart-order-router'
+//import { sendTiming } from 'components/analytics'
 import { AVERAGE_L1_BLOCK_TIME } from 'constants/chainInfo'
 import { useRoutingAPIArguments } from 'lib/hooks/routing/useRoutingAPIArguments'
 import ms from 'ms.macro'
@@ -76,7 +76,7 @@ export function useRoutingAPITrade<TTradeType extends TradeType>(
 }
 
 // only want to enable this when app hook called
-class GAMetric extends IMetric {
+/* class GAMetric extends IMetric {
   putDimensions() {
     return
   }
@@ -86,4 +86,4 @@ class GAMetric extends IMetric {
   }
 }
 
-setGlobalMetric(new GAMetric())
+setGlobalMetric(new GAMetric()) */

@@ -13,7 +13,7 @@
     "graphql:generate:data": "graphql-codegen --config graphql.data.codegen.config.ts",
     "graphql:generate:thegraph": "graphql-codegen --config graphql.thegraph.codegen.config.ts",
     "graphql:generate": "yarn graphql:generate:data && yarn graphql:generate:thegraph",
-    "graphql": "yarn graphql:fetch && yarn graphql:generate",
+    "graphql": "yarn graphql:generate",
     "i18n:extract": "lingui extract --locale en-US",
     "i18n:pseudo": "lingui extract --locale pseudo",
     "i18n:compile": "lingui compile",
@@ -29,7 +29,8 @@
     "test": "craco test",
     "cypress:open": "cypress open --browser chrome --e2e",
     "cypress:run": "cypress run --browser chrome --e2e",
-    "deduplicate": "yarn-deduplicate --strategy=highest"
+    "deduplicate": "yarn-deduplicate --strategy=highest",
+    "postinstall": "yarn patch-package"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -117,7 +118,9 @@
     "jest-fetch-mock": "^3.0.3",
     "jest-styled-components": "^7.0.8",
     "ms.macro": "^2.0.0",
+    "patch-package": "^7.0.0",
     "path-browserify": "^1.0.1",
+    "postinstall": "^0.8.0",
     "prettier": "^2.7.1",
     "process": "^0.11.10",
     "react-scripts": "^5.0.1",

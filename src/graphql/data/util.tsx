@@ -68,6 +68,7 @@ export const CHAIN_ID_TO_BACKEND_NAME: { [key: number]: Chain } = {
   [SupportedChainId.OPTIMISM]: Chain.Optimism,
   [SupportedChainId.OPTIMISM_GOERLI]: Chain.Optimism,
   [SupportedChainId.BNB]: Chain.Bnb,
+  [SupportedChainId.HARMONY_TESTNET]: Chain.HarmonyTestnet,
 }
 
 export function chainIdToBackendName(chainId: number | undefined) {
@@ -82,6 +83,7 @@ const GQL_CHAINS: number[] = [
   SupportedChainId.POLYGON,
   SupportedChainId.ARBITRUM_ONE,
   SupportedChainId.CELO,
+  SupportedChainId.HARMONY_TESTNET,
 ]
 
 export function isGqlSupportedChain(chainId: number | undefined): chainId is SupportedChainId {
@@ -112,6 +114,7 @@ const URL_CHAIN_PARAM_TO_BACKEND: { [key: string]: Chain } = {
   arbitrum: Chain.Arbitrum,
   optimism: Chain.Optimism,
   bnb: Chain.Bnb,
+  harmony: Chain.HarmonyTestnet,
 }
 
 export function validateUrlChainParam(chainName: string | undefined) {
@@ -128,6 +131,7 @@ export const CHAIN_NAME_TO_CHAIN_ID: { [key in Chain]: SupportedChainId } = {
   [Chain.Arbitrum]: SupportedChainId.ARBITRUM_ONE,
   [Chain.UnknownChain]: SupportedChainId.MAINNET,
   [Chain.Bnb]: SupportedChainId.BNB,
+  [Chain.HarmonyTestnet]: SupportedChainId.HARMONY_TESTNET,
 }
 
 export function fromGraphQLChain(chain: Chain): SupportedChainId {

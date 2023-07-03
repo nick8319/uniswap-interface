@@ -15,6 +15,7 @@ export const FEE_AMOUNT_DETAIL: Record<
       SupportedChainId.BNB,
       SupportedChainId.CELO,
       SupportedChainId.CELO_ALFAJORES,
+      SupportedChainId.HARMONY_TESTNET,
       SupportedChainId.MAINNET,
       SupportedChainId.OPTIMISM,
       SupportedChainId.POLYGON,

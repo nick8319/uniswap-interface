@@ -6,6 +6,7 @@ import { default as arbitrumCircleLogoUrl, default as arbitrumLogoUrl } from 'as
 import bnbSquareLogoUrl from 'assets/svg/bnb_square_logo.svg'
 import bnbLogo from 'assets/svg/bnb-logo.svg'
 import celoLogo from 'assets/svg/celo_logo.svg'
+//import harmonyLogo from 'assets/svg/harmony_logo.svg'
 import celoSquareLogoUrl from 'assets/svg/celo_square_logo.svg'
 import optimismSquareLogoUrl from 'assets/svg/optimism_square_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
@@ -15,7 +16,7 @@ import ms from 'ms.macro'
 import { darkTheme } from 'theme/colors'
 
 import { SupportedChainId, SupportedL1ChainId, SupportedL2ChainId } from './chains'
-import { ARBITRUM_LIST, CELO_LIST, OPTIMISM_LIST, PLASMA_BNB_LIST } from './lists'
+import { ARBITRUM_LIST, CELO_LIST, OPTIMISM_LIST, PLASMA_BNB_LIST, HARMONY_TESTNET_LIST } from './lists'
 
 export const AVERAGE_L1_BLOCK_TIME = ms`12s`
 
@@ -210,6 +211,22 @@ const CHAIN_INFO: ChainInfoMap = {
     squareLogoUrl: bnbSquareLogoUrl,
     nativeCurrency: { name: 'BNB', symbol: 'BNB', decimals: 18 },
     defaultListUrl: PLASMA_BNB_LIST,
+    color: darkTheme.chain_56,
+    backgroundColor: darkTheme.chain_56_background,
+  },
+  [SupportedChainId.HARMONY_TESTNET]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    bridge: 'https://layerzero.bridge.harmony.one/one',
+    docs: 'https://docs.harmony.one/home/',
+    explorer: 'https://explorer.pops.one/',
+    infoLink: 'https://info.uniswap.org/#/bnb/',
+    label: 'Harmony Testnet',
+    logoUrl: bnbLogo,
+    circleLogoUrl: bnbCircleLogoUrl,
+    squareLogoUrl: bnbSquareLogoUrl,
+    nativeCurrency: { name: 'ONE', symbol: 'ONE', decimals: 18 },
+    defaultListUrl: HARMONY_TESTNET_LIST,
     color: darkTheme.chain_56,
     backgroundColor: darkTheme.chain_56_background,
   },

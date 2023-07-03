@@ -50,6 +50,12 @@ import {
   WETH_POLYGON,
   WETH_POLYGON_MUMBAI,
   WRAPPED_NATIVE_CURRENCY,
+  ETH_HARMONY_TESTNET,
+  USDC_HARMONY_TESTNET,
+  USDT_HARMONY_TESTNET,
+  DAI_HARMONY_TESTNET,
+  WBTC_HARMONY_TESTNET,
+  BUSD_HARMONY_TESTNET,
 } from './tokens'
 
 type ChainTokenList = {
@@ -106,6 +112,12 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     CAKE_BSC,
   ],
   [SupportedChainId.CELO]: [CUSD_CELO, CEUR_CELO, CMC02_CELO, PORTAL_USDC_CELO, PORTAL_ETH_CELO],
+  [SupportedChainId.HARMONY_TESTNET]: [
+    USDC_HARMONY_TESTNET,
+    ETH_HARMONY_TESTNET,
+    USDT_HARMONY_TESTNET,
+    DAI_HARMONY_TESTNET
+  ],
 }
 export const ADDITIONAL_BASES: { [chainId: number]: { [tokenAddress: string]: Token[] } } = {
   [SupportedChainId.MAINNET]: {
@@ -203,6 +215,16 @@ export const COMMON_BASES: ChainCurrencyList = {
     ETH_BSC,
     BTC_BSC,
     BUSD_BSC,
+  ],
+
+  [SupportedChainId.HARMONY_TESTNET]: [
+    nativeOnChain(SupportedChainId.HARMONY_TESTNET),
+    USDC_HARMONY_TESTNET,
+    USDT_HARMONY_TESTNET,
+    DAI_HARMONY_TESTNET,
+    ETH_HARMONY_TESTNET,
+    WBTC_HARMONY_TESTNET,
+    BUSD_HARMONY_TESTNET,
   ],
 }
 
