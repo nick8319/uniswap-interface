@@ -16,7 +16,7 @@ const CHAIN_SUBGRAPH_URL: Record<number, string> = {
 
   [SupportedChainId.BNB]: 'https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-v3-bsc',
 
-  [SupportedChainId.HARMONY_TESTNET]: 'http://127.0.0.1:8000/subgraphs/name/protofire/v3-subgraph',
+  [SupportedChainId.HARMONY_TESTNET]: 'http://graph.staging-safe.harmony.one:8000/subgraphs/name/harmony-test/v3-subgraph',
 }
 
 const httpLink = new HttpLink({ uri: CHAIN_SUBGRAPH_URL[SupportedChainId.MAINNET] })
